@@ -16,9 +16,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('underwater.jfif') no-repeat;
+  background: url('Pillars of creation.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100svh;
 }
 
 header {
