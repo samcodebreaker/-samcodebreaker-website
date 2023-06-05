@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('sn logo.png') no-repeat;
+  background: url('background.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -26,7 +26,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0px; 
+  padding: 20px 20px; 
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -36,13 +36,14 @@ header {
 
 .logo {
   font-size: 2em;
-  color: yellow;
+  color: limegreen;
   user-select: none;
   text-shadow: 1px 1px 1px black;
-  text-transform: up;
+  text-transform: uppercase;
 }
 
 .navigation a {
+  position: relative;
   width: 130px;
   height: 50px;
   background: transparent;
@@ -52,6 +53,7 @@ header {
   cursor: pointer;
   font-size: 1.1em;
   color: #fff;
+  text-decoration: none;
   font-weight: 500;
   margin-left: 40px;
   text-shadow: 1px 1px 1px black;
@@ -83,11 +85,20 @@ header {
   height: 50px;
   background: transparent;
   border: 2px solid #fff;
+  outline: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1.1em;
   color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
   text-shadow: 1px 1px 1px black;
+}
+
+.navigation .btnLogin-popup:hover {
+  background: #fff;
+  color: #162938;
 }
 
 .wrapper {
@@ -168,13 +179,13 @@ header {
   position: relative;
   width: 100%;
   height: 50px;
-  border-bottom: 2ps solid #162938;
+  border-bottom: 2px solid #162938;
   margin: 30px 0;
 }
 
-.input-box lable {
+.input-box label {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 5px;
   transform: translateY(-50%);
   margin: 30px 0;
@@ -185,9 +196,9 @@ header {
   transition: .5s;
 }
 
-.input-box input:focus~lable,
-.input-box input:valid~lable {
-  top: -5px;
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -25px;
 }
 
 .input-box input {
@@ -246,7 +257,7 @@ header {
   border-radius: 6px;
   cursor: pointer;
   font-size: 1em;
-  /*color: #fff;*/
+  color: #fff;
   font-weight: 500;
 }
 
