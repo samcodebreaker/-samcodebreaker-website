@@ -1,0 +1,145 @@
+/* Global styles */
+@font-face {
+  font-family: 'mk3';
+  src: url(mk3.ttf);
+  /* Add additional font formats if necessary */
+}
+
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-style: italic;
+  font-size: 26px; /* Increase the font size as desired */
+}
+
+/* Global styles */
+body {
+  font-family: mk3, Arial, sans-serif;
+  text-shadow: 1px 1px 1px black;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  background-color: #333;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Common styles for page sections */
+.page-section {
+  text-align: center;
+  padding: 100px 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Home Page styles */
+#home {
+  background-image: url("Pillars of creation.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .container {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 200px;
+}
+
+/* My Apps Page styles */
+#my-apps {
+  background-image: url("galaxy.jpg");
+  color: yellow;
+}
+
+.app-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+}
+
+.app-list li {
+  text-align: center;
+  width: 300px;
+  margin: 20px;
+}
+
+.app-list li img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* About Page styles */
+#about {
+  background-image: url("sky.jfif");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#about .container {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 200px;
+}
+
+/* Contact Me Page styles */
+#contact {
+  background-image: url("The Bubble nebula.jpg");
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
