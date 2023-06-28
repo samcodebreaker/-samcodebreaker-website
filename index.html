@@ -8,10 +8,9 @@
   <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="my-apps.html">Sam's Apps</a></li>
+      <li><a href="my-apps.html">My Apps</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact Sam</a></li>
+      <li><a href="contact.html">Contact Developer</a></li>
     </ul>
   </nav>
 
@@ -19,14 +18,38 @@
   <section id="home">
     <div class="container">
       <h1>WELCOME TO CODEBREAKERS WEBSITE</h1>
-      <br><br/>
       <h2>THERE IS NO KNOWLEDGE THAT IS NOT POWER</h2>
+      <p>Are you a reputable organization in need of a coder? Are you a business or an individual in need of your own website? Click the contact developer tab to view some of my work. Let's make ideas a reality.</p>
       <br><br/>
-      <p>Proffessional developers.</p>
-      <a href="login.html" class="cta-button">Login / Sign Up</a>
+      <p>My website is designed to be a hub of knowledge and inspiration, offering a wide range of resources to fuel my coding journey. Explore my comprehensive videos, carefully crafted to cater to different skill levels. From the fundamentals of HTML, CSS, and JavaScript to advanced demonstrations in Python coding.</p>
+      <br><br/>
+      <button onclick="location.href='login.html'" class="cta-button">LOGIN / SIGN UP</button>
+    </div>
+    <audio src="music/Bittersweet Symphony - The Verve (Instrumental Version).mp3" autoplay loop>
+      <p>Your browser does not support the audio element.</p>
+    </audio>
+
+    <!-- Volume Mixer -->
+    <div class="volume-mixer">
+      <label for="volume-slider">Volume:</label>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
     </div>
   </section>
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var audio = document.querySelector("audio");
+      var volumeSlider = document.getElementById("volume-slider");
+
+      // Set the initial volume based on the slider value
+      audio.volume = volumeSlider.value;
+
+      // Update the audio volume when the slider value changes
+      volumeSlider.addEventListener("input", function() {
+        audio.volume = volumeSlider.value;
+      });
+    });
+  </script>
 </body>
 </html>
