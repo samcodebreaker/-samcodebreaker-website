@@ -44,6 +44,13 @@ nav ul li a {
   padding: 10px;
 }
 
+/* Change color of login button */
+.cta-button {
+  color: black;
+  padding: 10px 20px;
+  font-family: mk3.ttf);
+}
+
 /* Common styles for page sections */
 .page-section {
   text-align: center;
@@ -55,7 +62,7 @@ nav ul li a {
 
 /* Home Page styles */
 #home {
-  background-image: url("Pillars of creation.jpg");
+  background-image: url("new 3.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -65,18 +72,34 @@ nav ul li a {
   align-items: center;
 }
 
+/* Change text color of index page heading 1 */
+#home h1 {
+  color: yellow;
+}
+
 #home .container {
   text-align: center;
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
   color: #fff;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+  line-height: 1.5; /* Add line-height to create vertical spacing */
 }
 
 /* My Apps Page styles */
 #my-apps {
   background-image: url("galaxy.jpg");
+  color: yellow;
+}
+
+/* Change color of My Apps text headline */
+#my-apps h2 {
+  color: yellow;
+}
+
+/* Change text color of index page heading 1 */
+#my-apps h3 {
   color: yellow;
 }
 
@@ -95,7 +118,7 @@ nav ul li a {
 }
 
 .app-list li img {
-  width: 200px;
+  width: 250px;
   height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
@@ -108,6 +131,11 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+/* Change color of About text headline */
+#about h2 {
+  color: yellow;
 }
 
 #about .container {
@@ -127,6 +155,18 @@ nav ul li a {
 form {
   display: flex;
   flex-direction: column;
+}
+
+/* Change color of Contact text headline */
+#contact h2 {
+  color: yellow;
+}
+
+/* Change color of text links */
+#contact a {
+  color: white; 
+  margin: 10px 0px; /* Add margin to create vertical spacing */
+  line-height: 2.5; /* Adjust the line height as needed */
 }
 
 input[type="text"],
